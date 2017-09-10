@@ -49,7 +49,7 @@ a.btn:focus {
     color: #fff !important;
 }
 section{
-    padding: 60px 0px;
+    padding: 0px;
 }
 section .inner{
     padding: 4em 4em 2em 4em;
@@ -114,7 +114,12 @@ section .inner{
     background-color: #4a0072;
 }
 .bg-style1 {
-    background-color: #5052B5;
+    background: #5052B5;
+    background-image:url(/static/img/what-I-do.jpg);
+    background-image:url(/static/img/what-I-do.jpg), linear-gradient(#CC8363, #4E4E4E);
+}
+.bg-texture {
+    background: rgba(0,0,0,0.3);
 }
 video#bgVideo {
     position: fixed;
