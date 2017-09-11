@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900');
+
+/*
+left panel css
+*/
+
+.left-panel {
+    background: rgba(0,0,0,0.3);
+}
+.lp-col-fixed{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+}
+
+/*social icons*/
+.social-icon {
+    font-size: 30px;
+    line-height: 14px;
+}
+.social-icon a{
+    border-bottom: none;
+}
+.text-twitter-alt, .text-linkedin-alt, .text-email-alt, .text-github-alt{
+    color: rgba(255, 255, 255, 0.55);
+}
+.text-twitter, .text-twitter-alt:hover{
+    color:#00aced;
+}
+.text-email, .text-email-alt:hover{
+    color: #ffffff;
+}
+.text-linkedin, .text-linkedin-alt:hover{
+    color: #007bb6;
+}
+.text-github, .text-github-alt:hover{
+    color: #000000;
+}
+
+/*
+Image containers for thumbnails
+*/
+
+.img-container-circle{
+    width: 200px !important;
+    border-radius: 50%;
+}
+.img-container-card{
+    width: auto;
+    border-radius: 15%;
+}
+
+/*
+For progress bars
+*/
+.progress{
+    border-radius: 0.5rem;
+}
+.progress-bar{
+    border-radius: 0.5rem;
+}
+.novice {
+    background-color: #86b245;
+}
+.master {
+    background-color: #86b31b;
+}
+.expert {
+    background-color: #86e01e;
+}
+
+/*
+Everything else that applies across all divs
+*/
+
+.text-primary {
+    color: #ffffff !important;
+}
+.hero {
+    height: 100vh;
+    width: 95vw;
+    min-height: 600px;
+}
+
+section{
+    padding: 0px;
+}
+section .inner{
+    padding: 4em 4em 2em 4em;
+}
+
+.main-page{
+    /*background-color: #fff;*/
+    background-image:url(/static/img/what-I-do.jpg);
+
+    background: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: 100%, cover,cover;
+    background-position: top left,center center,bottom center;
+    background-attachment: fixed;
+    height: 99vh;
+}
+
+
+/*
+Home section
+*/
+.bg-style-home{
+}
+
+/*
+My skills section
+*/
+.bg-style-skills{
+}
+
+/*
+Next Play section
+*/
+.bg-style-next-play {
+}
+
+/*
+About me section
+*/
+.bg-style-about {
+}
+
+/*
+Connect with me section
+*/
+.bg-style-connect {
+}

@@ -3,3 +3,4 @@ venv
 staticfiles
 .env
 .idea/
+*.DS_Store

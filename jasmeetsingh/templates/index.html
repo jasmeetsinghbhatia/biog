@@ -9,50 +9,59 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!--icons-->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="static/css/style.css" />
+        <!--Page stylesheet-->
+        <link rel="stylesheet" href="static/css/temp.css" />
     </head>
     <body>
-        <!--hero section-->
+        <!--main section-->
         <section class="bg-alt hero p-0">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-3 bg-primary-dark py-5 col-fixed text-center">
-
-                            <div class="col-sm-4 mt-2 wow main-heading mb-5 text-center">
-                                <img src="/static/img/jasmeet.jpg" alt="Jasmeet Singh" class="img-container-card img-fluid"/>
+                    <div class="col-sm-3 left-panel py-5 lp-col-fixed text-center">
+                            <div class="card col-sm-4 mt-2 wow fadeIn main-heading mb-5 text-center">
+                                <img src="/static/img/atwork.jpg" alt="Jasmeet Singh" class="img-container-circle img-fluid"/>
                                 <h5 class="card-title pt-4">Jasmeet Singh</h5>
                                 <p class="card-text">Software Engineer</p>
                             </div>
 
                         <ul class="nav flex-column menu-left mt-5">
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#home">Home</a>
+                                <a class="nav-link page-scroll text-primary" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#work">My Skills</a>
+                                <a class="nav-link page-scroll text-primary" href="#skills">My Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#about">Who am I</a>
+                                <a class="nav-link page-scroll text-primary" href="#next-play">Ideal next play</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#connect">Connect with me</a>
+                                <a class="nav-link page-scroll text-primary" href="#about">Who am I</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link page-scroll text-primary" href="#connect">Connect with me</a>
                             </li>
                         </ul>
-                        <p class="mt-4 social-icon">
-                            <a href="https://twitter.com/jusmyth" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
-                            <a href="https://github.com/jasmeetsinghbhatia" target="_blank"><em class="ion-social-github text-github-alt icon-sm mr-3"></em></a>
-                            <a href="https://www.linkedin.com/in/jasmeetsinghbhatia" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3"></em></a>
-                        </p>
-                        <p class="small">&copy; Face. All rights reserved.</p>
+                        <!--page footer-->
+                        <div class="container bg-style-footer">
+                            {% block footer %}
+                                <p class="mt-4 social-icon">
+                                    <a href="https://twitter.com/jusmyth" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
+                                    <a href="https://github.com/jasmeetsinghbhatia" target="_blank"><em class="ion-social-github text-github-alt icon-sm mr-3"></em></a>
+                                    <a href="https://www.linkedin.com/in/jasmeetsinghbhatia" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3"></em></a>
+                                    <a href="mailto:jasmeetsinghbhatia@gmail.com" target="_blank"><em class="ion-email text-email-alt icon-sm mr-3"></em></a>
+                                </p>
+                                <p class="text-white text-center">Made with&nbsp;❤️&nbsp; &&nbsp;<a href="https://open.spotify.com/user/sonymusicnl/playlist/0PzTB0SzhsYdmq3lvb0zgv" target="_blank">☕️</a> &nbsp;by <a href="http://linkedin.com/in/jasmeetsinghbhatia" target="_blank" style="color: #39A8E8; padding-top: 10px">Jasmeet Singh</a></p>
+                            {% endblock %}
+                        </div>
                     </div>
                     <div class="col-sm-9 offset-sm-3 px-0">
-                        <!--welcome-->
-                        <section class="hero bg-primary" id="home">
+                        <!--Home-->
+                        <section class=" main-page bg-style-home"id="home">
                             <div class="container">
                                 <div class="inner align-middle wow fadeIn">
                                     <h2 class="pt-5 text-white text-uppercase">Welcome to my Biog 👋</h2>
                                     <p class="lead mt-5">
-                                        Launch your website with Face today. Face is a FREE 
+                                        Launch your website with Face today. Face is a FREE
                                         Bootstrap 4 template designed by <a href="https://wireddots.com">Wired Dots</a> and released
                                         under the <a href="https://wireddots.com/licenses">Creative Commons 4.0</a>.
                                     </p>
@@ -61,49 +70,59 @@
                                 </div>
                             </div>
                         </section>
-
-                        <!--What's my skill-->
-                        <section class="bg-style1" id="work">
+                        <!--skills section-->
+                        <section class="main-page bg-style-skills" id="skills">
                             <div class="container">
                                 <div class="inner">
                                     <div class="row">
-                                        <div class="col-xs-12 wow fadeIn">
-                                            <h2 class="text-white text-uppercase">What are my skills 👨‍💻 </h2>
-                                            <p class="pt-4">
-                                                I Code.
-                                            </p>
+                                        <div class="col-xs-12 pt-5 wow fadeIn">
+                                            <h2 class="text-uppercase">What are my skills 👨‍💻 </h2>
+                                            <p class="pt-4">I Code.</p>
                                         </div>
                                     </div>
                                     <div class="row mt-4">
                                         <div class="col-lg-12 mt-2">
-                                            <h6>HTML5</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="0.1s">
-                                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                            </div>
                                             <h6>CSS</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="0.3s">
-                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                            </div>
-                                            <h6>Responsive Design</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="0.5s">
-                                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                            <div class="progress mb-3" data-wow-delay="0.3s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                             </div>
                                             <h6>JavaScript</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="0.7s">
-                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            <div class="progress mb-3" data-wow-delay="0.7s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div>
+                                            <h6>HTML5</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.1s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <h6>Java</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.5s">
+                                                <div class="progress-bar wow fadeInLeft master" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                                             </div>
                                             <h6>Python</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="0.9s">
-                                                <div class="progress-bar" role="progressbar" style="width: 99.99%" aria-valuenow="99.99" aria-valuemin="0" aria-valuemax="100">99.99%</div>
+                                            <div class="progress mb-3" data-wow-delay="0.9s">
+                                                <div class="progress-bar wow fadeInLeft expert" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                                             </div>
                                             <h6>Coffee</h6>
-                                            <div class="progress mb-3 wow fadeInLeft" data-wow-delay="1s">
-                                                <div class="progress-bar bg-green" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            <div class="progress mb-3" data-wow-delay="1s">
+                                                <div class="progress-bar wow fadeInLeft expert" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- My Ideal next play-->
+                        <section class="main-page bg-style-next-play" id="next-play">
+                            <div class="container">
+                                <div class="inner">
+                                    <div class="row">
+                                        <div class="col-xs-12 pt-5 wow fadeIn">
+                                            <h2 class="text-uppercase">An Ideal next play 👨‍💻 </h2>
+                                            <p class="pt-4">I seek to share my skills and experience with the best brains in the industry.</p>
+                                        </div>
+                                    </div>
                                     <div class="row text-center pt-5">
-                                        <div class="col-md-4 wow fadeInleft">
+                                        <div class="col-md-4 wow fadeInLeft">
                                             <div class="border-all">
                                                 <div class="pb-3">
                                                     <em class="ion-refresh icon-md"></em>
@@ -140,9 +159,8 @@
                                 </div>
                             </div>
                         </section>
-
-                        <!--who we are-->
-                        <section class="bg-style3"  id="about">
+                        <!--About section-->
+                        <section class="main-page bg-style-about"  id="about">
                             <div class="container">
                                 <div class="inner">
                                     <div class="row">
@@ -154,18 +172,18 @@
                                         </div>
                                     </div>
                                     <div class="row d-md-flex mt-4 text-center">
-                                        <div class="col-sm-4 mt-2 wow fadeInUp">
-                                            <img src="/static/img/jasmeet.jpg" alt="Male" class="img-container-circle img-fluid"/>
+                                        <div class="col-sm-4 mt-2 wow flipInX">
+                                            <img src="/static/img/jasmeet.jpg" alt="Male" class="img-container-card img-fluid"/>
                                             <h5 class="card-title pt-4">Jasmeet Singh</h5>
                                             <p class="card-text">Software Engineer</p>
                                         </div>
-                                        <div class="col-sm-4 mt-2 wow fadeInUp">
-                                            <img src="/static/img/mountainbiker.jpg" alt="Male" class="img-container-circle img-fluid"/>
+                                        <div class="col-sm-4 mt-2 wow flipInX">
+                                            <img src="/static/img/mountainbiker.jpg" alt="Male" class="img-container-card img-fluid"/>
                                             <h5 class="card-title pt-4">Jasmeet Singh</h5>
                                             <p class="card-text">Mountain Biker</p>
                                         </div>
-                                        <div class="col-sm-4 mt-2 wow fadeInUp">
-                                            <img src="/static/img/lifehacker.jpg" alt="Male" class="img-container-circle img-fluid"/>
+                                        <div class="col-sm-4 mt-2 wow flipInX">
+                                            <img src="/static/img/lifehacker.jpg" alt="Male" class="img-container-card img-fluid"/>
                                             <h5 class="card-title pt-4">Jasmeet Singh</h5>
                                             <p class="card-text">Life Hacker</p>
                                         </div>
@@ -173,9 +191,8 @@
                                 </div>
                             </div>
                         </section>
-
-                        <!--contact-->
-                        <section class="bg-style2">
+                        <!--Contact section-->
+                        <section class="main-page bg-style-connect" id="connect">
                             <div class="container">
                                 <div class="inner">
                                     <div class="row d-md-flex text-center wow fadeIn">
@@ -191,25 +208,6 @@
                                             <p><em class="ion-ios-location-outline icon-md"></em></p>
                                             <p class="lead">San Francisco, CA</p>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--footer-->
-                        <section id="connect" class="bg-style2 pt-0">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-8 offset-sm-2 col-xs-12 text-center">
-                                        <p class="mt-2 social-icon">
-                                            <a href="https://twitter.com/jusmyth" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
-                                            <a href="https://github.com/jasmeetsinghbhatia" target="_blank"><em class="ion-social-github text-github-alt icon-sm mr-3"></em></a>
-                                            <a href="https://www.linkedin.com/in/jasmeetsinghbhatia" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3"></em></a>
-                                        </p>
-                                        <p class="pt-2 text-center">
-                                            &copy; 2017 Face Theme. A free Bootstrap 4 theme by 
-                                            <a href="https://wireddots.com">Wired Dots</a>. Designed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
