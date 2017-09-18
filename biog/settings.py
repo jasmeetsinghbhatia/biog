@@ -26,7 +26,7 @@ PROJECT_DIR = os.path.join(PROJECT_ROOT,'../jasmeetsingh')
 SECRET_KEY = ')kc(f_ol0e6_eth!y4-0vv#z12win5q1$0xkdt(qmi)6cmqujh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['jasmeetsingh.herokuapp.com', '127.0.0.1', 'localhost']
 
