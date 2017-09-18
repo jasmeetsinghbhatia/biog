@@ -17,58 +17,72 @@
         <section class="bg-alt hero p-0">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-3 left-panel py-5 lp-col-fixed text-center">
-                            <div class="card col-sm-4 mt-2 wow fadeIn main-heading mb-5 text-center">
-                                <img src="/static/img/atwork.jpg" alt="Jasmeet Singh" class="img-container-circle img-fluid"/>
-                                <h5 class="card-title pt-4">Jasmeet Singh</h5>
-                                <p class="card-text">Software Engineer</p>
+                    <div class="col-sm-2 left-panel py-4 lp-col-fixed text-center">
+                            <div class="card">
+                                <div class="mt-2 main-heading mb-5 text-center">
+                                    <img src="/static/img/atwork.jpg" alt="Jasmeet Singh" class="img-container-card img-fluid" style="width: 150px !important;"/>
+                                    <h5 class="text-common pt-4">Jasmeet Singh</h5>
+                                    <p class="text-common">Software Engineer</p>
+                                </div>
                             </div>
 
-                        <ul class="nav flex-column menu-left mt-5">
+                        <ul class="nav card flex-column menu-left mt-5">
                             <li class="nav-item">
-                                <a class="nav-link page-scroll text-primary" href="#home">Home</a>
+                                <a class="nav-link page-scroll text-common" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll text-primary" href="#skills">My Skills</a>
+                                <a class="nav-link page-scroll text-common" href="#skills">My Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll text-primary" href="#next-play">Ideal next play</a>
+                                <a class="nav-link page-scroll text-common" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll text-primary" href="#about">Who am I</a>
+                                <a class="nav-link page-scroll text-common" href="#next-play">Ideal next play</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll text-primary" href="#connect">Connect with me</a>
+                                <a class="nav-link page-scroll text-common" href="#about">Who am I</a>
                             </li>
                         </ul>
                         <!--page footer-->
-                        <div class="container bg-style-footer">
+                        <div class="card bg-style-footer">
                             {% block footer %}
+                                <div class="nav-item">
+                                    <a class="nav-link page-scroll text-common" href="#connect">Connect with me</a>
+                                </div>
                                 <p class="mt-4 social-icon">
                                     <a href="https://twitter.com/jusmyth" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
                                     <a href="https://github.com/jasmeetsinghbhatia" target="_blank"><em class="ion-social-github text-github-alt icon-sm mr-3"></em></a>
                                     <a href="https://www.linkedin.com/in/jasmeetsinghbhatia" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3"></em></a>
                                     <a href="mailto:jasmeetsinghbhatia@gmail.com" target="_blank"><em class="ion-email text-email-alt icon-sm mr-3"></em></a>
                                 </p>
-                                <p class="text-white text-center">Made with&nbsp;❤️&nbsp; &&nbsp;<a href="https://open.spotify.com/user/sonymusicnl/playlist/0PzTB0SzhsYdmq3lvb0zgv" target="_blank">☕️</a> &nbsp;by <a href="http://linkedin.com/in/jasmeetsinghbhatia" target="_blank" style="color: #39A8E8; padding-top: 10px">Jasmeet Singh</a></p>
+                                <div class="text-common text-center .ion-heart" style="font-size: 15px;">Made with&nbsp;❤️&nbsp; &&nbsp;<a href="https://open.spotify.com/user/sonymusicnl/playlist/0PzTB0SzhsYdmq3lvb0zgv" target="_blank">☕️</a></div>
+                                <div class="text-common text-center" style="font-size: 10px"> by <a href="http://linkedin.com/in/jasmeetsinghbhatia" target="_blank" style="color: #39A8E8; padding-top: 20px">Jasmeet Singh</a></div>
                             {% endblock %}
                         </div>
                     </div>
-                    <div class="col-sm-9 offset-sm-3 px-0">
+                    <div class="col-sm-12 px-0 main-page">
                         <!--Home-->
-                        <section class=" main-page bg-style-home"id="home">
-                            <div class="container">
-                                <div class="inner align-middle wow fadeIn">
-                                    <h2 class="pt-5 text-white text-uppercase">Welcome to my Biog 👋</h2>
+                        <section class="main-page bg-style-home" id="home">
+                                <div class="video-container">
+                                    <div class="filter"></div>
+                                        <video autoplay loop class="fillWidth">
+                                            <source src="static/video/coffee.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                                        </video>
+                                    <div class="poster hidden">
+                                        <img src="static/img/what-I-do" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="inner">
+                                    <h2 class="heading pt-5 text-common text-uppercase" style="position: inherit">Welcome to my Biog 👋</h2>
                                     <p class="lead mt-5">
                                         Launch your website with Face today. Face is a FREE
                                         Bootstrap 4 template designed by <a href="https://wireddots.com">Wired Dots</a> and released
                                         under the <a href="https://wireddots.com/licenses">Creative Commons 4.0</a>.
                                     </p>
                                     <br/><br/>
-                                    <button class="btn btn-white btn-lg">Learn More</button>
+                                    <button class="btn btn-white btn-lg">Hire Me</button>
                                 </div>
-                            </div>
                         </section>
                         <!--skills section-->
                         <section class="main-page bg-style-skills" id="skills">
@@ -100,7 +114,48 @@
                                             </div>
                                             <h6>Python</h6>
                                             <div class="progress mb-3" data-wow-delay="0.9s">
-                                                <div class="progress-bar wow fadeInLeft expert" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                                <div class="progress-bar wow fadeInLeft master" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                            <h6>Coffee</h6>
+                                            <div class="progress mb-3" data-wow-delay="1s">
+                                                <div class="progress-bar wow fadeInLeft expert" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--projects section-->
+                        <section class="main-page bg-style-projects" id="projects">
+                            <div class="container">
+                                <div class="inner">
+                                    <div class="row">
+                                        <div class="col-xs-12 pt-5 wow fadeIn">
+                                            <h2 class="text-uppercase">Projects so far 🦄 </h2>
+                                            <p class="pt-4">I Code.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-12 mt-2">
+                                            <h6>CSS</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.3s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <h6>JavaScript</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.7s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div>
+                                            <h6>HTML5</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.1s">
+                                                <div class="progress-bar wow fadeInLeft novice" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <h6>Java</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.5s">
+                                                <div class="progress-bar wow fadeInLeft master" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                            </div>
+                                            <h6>Python</h6>
+                                            <div class="progress mb-3" data-wow-delay="0.9s">
+                                                <div class="progress-bar wow fadeInLeft master" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                                             </div>
                                             <h6>Coffee</h6>
                                             <div class="progress mb-3" data-wow-delay="1s">
@@ -160,7 +215,7 @@
                             </div>
                         </section>
                         <!--About section-->
-                        <section class="main-page bg-style-about"  id="about">
+                        <section class="main-page bg-style-about" id="about">
                             <div class="container">
                                 <div class="inner">
                                     <div class="row">
@@ -193,24 +248,29 @@
                         </section>
                         <!--Contact section-->
                         <section class="main-page bg-style-connect" id="connect">
-                            <div class="container">
+                                <div class="video-container" style="opacity: 1 !important;">
+                                    <div class="filter"></div>
+                                        <video autoplay loop class="fillWidth">
+                                            <source src="static/video/sanfrancisco.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                                        </video>
+                                    <div class="poster hidden">
+                                        <img src="static/img/what-I-do" alt="">
+                                    </div>
+                                </div>
                                 <div class="inner">
                                     <div class="row d-md-flex text-center wow fadeIn">
-                                        <div class="col-sm-4">
-                                            <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                                            <p class="lead">+1 (415) 937 4951</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p><em class="ion-ios-chatbubble-outline icon-md"></em></p>
-                                            <p class="lead">jasmeetsinghbhatia@gmail.com</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p><em class="ion-ios-location-outline icon-md"></em></p>
-                                            <p class="lead">San Francisco, CA</p>
+                                        <div class="contact-card">
+                                            <p><em class="ion-ios-telephone-outline contact-icon"></em></p>
+                                            <p class="text-common">+1 (415) 937 4951</p>
+                                            <p><em class="ion-ios-chatbubble-outline contact-icon"></em></p>
+                                            <p class="text-common">jasmeetsinghbhatia@gmail.com</p>
+                                            <p><em class="ion-ios-location-outline contact-icon"></em></p>
+                                            <p class="text-common">San Francisco, CA</p>
+
+                                            <p class="text-common px-1 py-5" style="font-size: 20px">  I live in the beautiful city of San Francisco. Let me know if you are in the city. We can grab coffee and talk about Software or Life or Both </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </section>
                     </div>
                 </div>
