@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900');
+
+
+/*
+All headings on the page
+*/
+.heading{
+    width: inherit;
+    border-radius: 15%;
+    margin: 5%;
+    border-style: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/*
+left panel css
+*/
+
+.left-panel {
+    /*background: transparent;*/
+    height: auto;
+    z-index: 3;
+}
+.lp-col-fixed{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+.card{
+    width: auto;
+    border-radius: 10%;
+    margin: 5%;
+    border-style: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+.main-heading {
+    text-transform: uppercase;
+
+    border-radius: 15%;
+}
+.nav{
+
+}
+.nav-link:hover{
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15% ;
+}
+
+.bg-style-footer{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin-bottom: 0;
+    margin-top: 20%;
+
+}
+
+/*social icons*/
+.social-icon {
+    font-size: 30px;
+    line-height: 75px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.social-icon a{
+    border-bottom: none;
+}
+.text-twitter-alt, .text-linkedin-alt, .text-email-alt, .text-github-alt{
+    color: #4E4E4E;
+}
+.text-twitter, .text-twitter-alt:hover{
+    color:#00aced;
+}
+.text-email, .text-email-alt:hover{
+    color: #ffffff;
+}
+.text-linkedin, .text-linkedin-alt:hover{
+    color: #007bb6;
+}
+.text-github, .text-github-alt:hover{
+    color: #000000;
+}
+
+/*
+Image containers for thumbnails
+*/
+
+.img-container-circle{
+    width: 200px !important;
+    border-radius: 50%;
+}
+.img-container-card{
+    width: auto;
+    border-radius: 15%;
+    background-color: #bbccdd;
+}
+
+/*
+For progress bars
+*/
+.progress{
+    border-radius: 0.5rem;
+}
+.progress-bar{
+    border-radius: 0.5rem;
+}
+.novice {
+    background-color: #86e01e;
+}
+.master {
+    background-color: #3f9310;
+}
+.expert {
+    background-color: #156902;
+}
+
+/*
+Everything else that applies across all divs
+*/
+
+.text-common {
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 18px;
+}
+
+
+.hero {
+    height: auto;
+    width: auto;
+}
+
+section{
+    padding: 0px;
+}
+section .inner{
+    padding: 4em 4em 2em 4em;
+}
+
+.main-page{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+Home section
+*/
+.bg-style-home{
+
+
+}
+
+.video-container {
+    position: absolute;
+    height: 100vh; !important;
+    width: 100%; !important;
+    overflow: hidden;
+    background: transparent;
+    opacity: 0.8;
+}
+
+.video-container .filter {
+    z-index: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/*
+My skills section
+*/
+.bg-style-skills{
+
+}
+
+/*
+Projects section
+*/
+.bg-style-projects{
+
+}
+
+/*
+Next Play section
+*/
+.bg-style-next-play {
+
+}
+
+/*
+About me section
+*/
+.bg-style-about {
+
+}
+
+/*
+Connect with me section
+*/
+.bg-style-connect {
+
+}
+
+/*
+Button
+*/
+.btn{
+    /*background-color: transparent;*/
+    border: solid 1px !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 3em;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn-white:hover {
+    background: #39A8E8 !important;
+    color: #fff !important;
+}
+
+.contact-card{
+    position: inherit;
+    /*width: 30vw;*/
+    /*height: 50vh;*/
+    border-radius: 5%;
+    border-style: hidden;
+    background-color: rgba(2550, 255, 255, 0.1);
+    z-index: 1;
+    margin-left: 65%;
+    margin-top: 15%;
+
+}
+.contact-icon{
+    font-size: 50px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
